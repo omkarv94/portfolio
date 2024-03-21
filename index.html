@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container-fluid">
     <header class="header">
         <img src="logo.png" alt="our main logo" class="logo" />
-  
+
         <nav class="navbar">
           <ul class="navbar-lists">
-            <li><a href="#section-hero" class="navbar-link home-link">Home</a></li>
+            <li><a href="#section-intro" class="navbar-link home-link">Home</a></li>
+            <li>
+              <a href="#section-skills" class="navbar-link about-link">Skills</a>
+            </li>
+            <li>
               <a href="/gallery.html" class="navbar-link about-link">Image-Gallery</a>
             </li>
             <li>
@@ -28,105 +33,116 @@
           <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
         </div>
       </header>
+    </div>
+      
       <!-- ======================================== 
-            Our Main Hero Section Start  
+            Our Main intro Section Start  
       ========================================  -->
       <main>
-        <section class="section-hero section" id="section-hero">
-          <div class="container grid grid-two-column">
-            <div class="section-hero-data">
-              <p class="hero-top-data">this is me</p>
-              <h1 class="hero-heading">omkar vaidya</h1>
-              <p class="hero-para">
+        <section class="section-intro section" id="section-intro">
+          <div class="container">
+            <div class="section-intro-data">
+              <p class="intro-top-data">HEY,</p>
+              <h2 class="intro-heading"></h2>
+            </div>
+            <div class="container grid grid-two-column">
+            <div>
+              <p class="intro-para">
                 As a motivated and enthusiastic software developer, I am deeply passionate about crafting innovative solutions and delivering exceptional results in web development. With a keen eye for detail and a relentless drive for excellence, I thrive in dynamic environments where challenges fuel my growth and creativity. Throughout my journey as a student, I have consistently demonstrated high work ethics and a commitment to continuous learning. I approach every project with a combination of curiosity and determination, always striving to expand my skills and knowledge to stay ahead in the rapidly evolving field of technology. Driven by a genuine love for coding and a desire to make a meaningful impact, I am eager to tackle new challenges and contribute my expertise to projects that push the boundaries of what is possible in the digital landscape.
               </p>
-              
             </div>
-            <!-- hero section right side  -->
-            <div class="section-hero-image">
+              <!-- intro section right side  -->
+            <div class="section-intro-image">
               <picture>
                 <source srcset="side.png" type="image/png" />
                 <source srcset="side.png" type="image/png" />
                 <img
                   src="side.png"
                   alt="this is me"
-                  class="hero-img"
+                  class="intro-img"
                 />
               </picture>
             </div>
+            </div>
+
           </div>
         </section>
       </main>
+      <hr \>
       <!-- ======================================== 
-            Our Bio-Data Section Start  
+            Skills Section Start  
       ========================================  -->
-  
-      <section class="section-biodata section">
+
+      <section class="section-skills section" id="section-skills">
         <div class="container grid grid-two-column">
-          <div class="bio-image">
+          <div class="skills-image">
             <img src="skills.png" alt="skills" />
           </div>
-          <!-- bio right side data  -->
-          <div class="bio-data">
+          <!-- skills right side data  -->
+          <div class="skills">
             <h2 class="common-heading">my skills</h2>
             <p>
-                I am proficient in Bootstrap, HTML5, CSS, JavaScript and React.
+                I am proficient in Springboot, HTML5, CSS, JavaScript and React.
             </p>
             <br />
             <p>
               I am always ready to learn new things and also interested to know about different technologies.
             </p>
-            <div class="bio-data-stats">
-              <div class="bio-stats">
+            <div class="skills-data-stats">
+              <div class="skils-stats">
                 <h3>React</h3>
-                <div class="bio-progress-bar">
+                <div class="skills-progress-bar">
                   <span>80%</span>
                 </div>
               </div>
-              <div class="bio-stats">
+              <div class="skills-stats">
                 <h3>HTML</h3>
-                <div class="bio-progress-bar bio-progress-2">
-                  <span>99%</span>
-                </div>
-              </div>
-              <div class="bio-stats">
-                <h3>CSS</h3>
-                <div class="bio-progress-bar bio-progress-3">
+                <div class="skills-progress-bar skills-progress-2">
                   <span>90%</span>
                 </div>
               </div>
-              <div class="bio-stats">
+              <div class="skills-stats">
+                <h3>CSS</h3>
+                <div class="skills-progress-bar skills-progress-3">
+                  <span>90%</span>
+                </div>
+              </div>
+              <div class="skills-stats">
                 <h3>JavaScript</h3>
-                <div class="bio-progress-bar bio-progress-4">
-                  <span>85%</span>
+                <div class="skills-progress-bar skills-progress-4">
+                  <span>95%</span>
+                </div>
+              </div>
+              <div class="skills-stats">
+                <h3>Springboot</h3>
+                <div class="skills-progress-bar skills-progress-5">
+                  <span>86%</span>
                 </div>
               </div>
             </div>
         </div>
       </section>
-  
-     
-   <!-- ======================================== 
-            Our Freelancing   Section Start  
-      ========================================  -->
-  
-      <section class="section section-freelancing">
-        <div class="overlay"></div>
-        <div class="container">
-          <h2>I am <span>available</span> for freelancing</h2>
 
+
+   <!-- ======================================== 
+            Freelancing   Section Start  
+      ========================================  -->
+
+      <section class="section section-freelancing">
+        <div class="container">
+          <h2>I am available for freelancing as well</h2>
         </div>
       </section>
-  
+
       <!-- ======================================== 
-            Our contact me   Section Start  
+            Contact me   Section Start  
       ========================================  -->
-  
+
       <section class="section section-contact" id="section-contact">
         <div class="container">
           <h2 class="common-heading">Contact Me</h2>
         </div>
-  
+
         <div class="section-contact-main contact-container">
           <form action="https://formspree.io/f/xknyvwjo" method="POST">
             <div class="grid grid-two-column">
@@ -153,7 +169,7 @@
                 />
               </div>
             </div>
-  
+
             <div>
               <label for="subject"></label>
               <input
@@ -177,7 +193,7 @@
                 required
               ></textarea>
             </div>
-  
+
             <div>
               <input
                 type="submit"
@@ -190,17 +206,27 @@
           </form>
         </div>
       </section>
-  
+
       <!-- ======================================== 
-            Our Footer   Section Start  
+            Footer   Section Start  
       ========================================  -->
       <footer class="section-footer section">
         <div class="container foot">
           This is a Portfolio-site of Omkar Vaidya.
-          <p> </p>
-          <p>
-          <img src="foot.png" alt="pic" class="foot-image"></p>
+          <br \>
+          <img src="foot.png" alt="pic" class="foot-image">
         </div>
       </footer>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+      var typed = new Typed(".intro-heading", {
+        strings: ["It's is me Omkar Vaidya", "I am a Technological Enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 20,
+        loop: true,
+        showCursor: false
+      })
+    </script> 
   </body>
 </html>
