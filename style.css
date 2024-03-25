@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
+} 
+body{
   background-image: url("bg.png");
 
   /* Set a specific height */
@@ -16,8 +18,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
-
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -58,9 +59,6 @@ a {
 li {
   list-style: none;
 }
-.container {
-  /* background: #221717;   */
-}
 /* ===========================================
 Header Section Start
 ======================================= */
@@ -84,10 +82,12 @@ Header Section Start
   background: #3a4d42;
   margin: 5px;
   padding: 5px;
+  border: 5px solid #d9e7ed;;
 }
 
 .navbar-link{
-  padding: 5px;
+  padding: 8px;
+  background-color: #d9e7ed;
 }
 
 .navbar-link:link,
@@ -105,8 +105,20 @@ Header Section Start
 .navbar-link:active {
   color: #8490ff;
 }
+.hamburger {
+  display: none;
+}
 
-.mobile-navbar-btn {
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+/* .mobile-navbar-btn {
   display: none;
   background-color: transparent;
   cursor: pointer;
@@ -115,7 +127,7 @@ Header Section Start
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
-}
+} */
 
 /* ?sticky navbar  */
 .sticky .header {
@@ -380,7 +392,7 @@ Freelancing Section Start
 }
 
 .section-freelancing h2 {
-  color: #040101;
+  color: #ebe1e1;
 }
 
 /* ===========================================
@@ -453,4 +465,45 @@ Footer Section Start
   .navbar-lists {
     gap: 3.4rem;
   }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-lists {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-lists.active {
+      left: 0;
+  }
+
+  .navbar-link {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 }
