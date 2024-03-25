@@ -505,5 +505,23 @@ Footer Section Start
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+.grid {
+  display: grid;
+  gap: 9rem;
+}
 
+.grid-two-column {
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.grid-three-column {
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.grid-four-column {
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+}
 }
