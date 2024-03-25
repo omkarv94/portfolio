@@ -1,0 +1,27 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Gap between cards */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+.card img {
+    width: 100%; /* Make images fill the container */
+    display: block; /* Remove default inline-block spacing */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-address {
+    display: none; /* Hide address by default */
+}
